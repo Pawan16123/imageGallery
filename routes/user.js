@@ -9,7 +9,7 @@ const upload = multerLogic();
 
 router.param('userId', getUser );
 
-// router.get('/', profilePage);
+router.get('/', profilePage);
 
 router.get('/getallusers', getAllUsers);
 

@@ -1,8 +1,8 @@
 const userCollection = require('../models/user.js');
 
-// exports.profilePage = (req, res)=>{
-//     res.status(200).send('Just testing in Progress');
-// }
+exports.profilePage = (req, res)=>{
+    res.status(200).send('Just testing in Progress');
+}
 
 exports.createUser = (req, res)=>{
     let fileUrl = req.file.path.replace(/\\/g, "/")
