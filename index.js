@@ -17,11 +17,9 @@ const userRoute = require('./routes/user.js');
 // use Routes
 app.use('/user',userRoute);
 
-
-
-
+app.use(express.static(path.join(__dirname, './client/build')));
 app.get('*', function(req,res){
-    res.sendFile(path.join(__dirname, "./client/build/index.html"))
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
 })
 // app.get('/', (req, res)=>{
 //     res.send('Hey there just starting ');
